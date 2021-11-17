@@ -1,2 +1,2 @@
 # paginawebpersonal
-Prueba de github
+Ejercicio de la página web personal
