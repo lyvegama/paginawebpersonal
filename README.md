@@ -1,3 +1,3 @@
 # paginawebpersonal
 
-<!-- web terminada -->
+pagina web personal para entregar
