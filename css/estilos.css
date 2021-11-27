@@ -1,69 +1,224 @@
-/* Menu horizontal con la propiedad float en menu
-ul.menu li {
-   float: left;
-} */
+/* Imagen de la cabecera */
+#banner {
+  margin-left: 400px;
+  padding: 50px;
+}
+
+/* TODA LA PÁGINA */
 
 /* Texto de títulos color y fuente */
 h1 {
     color:#483D8B;
     font-weight: normal;
-    font-family: "Constantia", Arial, Helvetica, sans-serif;
+    font-family: "Constantia", Arial, Helvetica;
+    margin: 50px 20px 100px 45px;
+    position: absolute;
 }
+
 h2 {
     color: #ADD8E6;
     font-weight: normal;
     font-family: "Constantia", Helvetica;
+    display:inline;
+    position: relative;
+    left: 200px;
 }
+
 h3 {
     color: #6A5ACD;
     font-weight: normal;
     font-family: "serif", sans-serif;
+    display: block;
+    padding: 10px;
+    background-color: rgb(231, 241, 243); 
 }
-
-/* Fuente de toda la página */
-p {
-    font-family: "Constantia", serif;
-  }
 
 /* PSUDOCLASE Ratón encima de un link cambio de color*/
 a:hover {
-    color: #B0C4DE;
-  }
+  color: #B0C4DE;
+  text-decoration:none;
+}
 
 /* PSEUDOCLASE Color de los enlaces */
 a:link {
-  color:	#a693da;
+color:	#a693da;
+text-decoration:none;
 }
 
 /* PSEUDOCLASE link ya visitado */
 a:visited {
-  color: 	#708090;
+color: 	#708090;
+text-decoration:none;
 }
 
-/* PSEUDOELEMENTO las primeras letras de toda la pagina */
-::first-letter {
-  color:#8b929b
+
+/* PÁGINA HOME */
+
+/* Id título de creatividad */
+#titulocreatividad {
+  margin: 40px 0px 0px 650px;
+  font-size: 170%;
+  position:absolute;
 }
 
-/* menu en horizontal creando una clase*/
-  ul.horizontal li{
-    display:block;
-    float:left;
-    padding:0 10px;
-    }
+/* Id de proyectos deco */
+#proyectosdeco {
+  margin: 520px 0px -130px 90px;
+  font-size: 170%;
+}
 
-    /* clase de los iconos de redes sociales */
-    .iconosredes {
-      
-      
-    }
-
-    /* aside el menu de la columna de la derecha */
-    aside {
-      background: rgb(174, 193, 197);
-      margin: 5px;
-      width: 300px;
-      height: 200px;
-      float: right;
-      box-sizing: border-box;
+/* Clase caja párrafo a la derecha */
+.cajaparrafoderecha {
+  text-align: justify;
+  margin: -100px 150px -200px 1000px;
+  padding-top: 0px;
+  padding: 30px 50px 50px;
+  float: right;
+  font-family: "Constantia", serif;
+  background-color: rgb(231, 241, 243);
+  border: 2px;
   }
+
+ /* Clase caja párrafo a la izquierda */
+.cajaparrafoizquierda {
+  text-align: justify;
+  margin: 20px 1000px -200px 150px;
+  padding-top: 0px;
+  padding: 10px 50px 50px;
+  float: left;
+  font-family: "Constantia", serif;
+  background-color: rgb(231, 241, 243);
+  border: 2px;
+}
+
+/* clase del vídeo centrado */
+.videointroduccion {
+  background-color: rgb(231, 241, 243);
+  text-align: center;
+  margin: 200px 150px 1px 150px;
+  padding: 20px 50px 20px 50px;
+}
+
+/* Menu en horizontal creando una clase*/
+ .horizontal li{
+    display: inline-block;
+    position: relative;
+    left: 455px;
+    background-color: rgb(231, 241, 243);
+    padding: 20px;
+ }
+
+
+/* GALERÍA DE PÁGINA DE MANUALIDADES */
+
+ /* Clase galería de imágenes de manualidades */
+ .galeria {
+  margin: 50px 0px 60px 45px;
+ }
+
+/* zoom al pasar el ratón por encima */
+.zoom {
+  transition: transform .8s; 
+}
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
+
+/* VÍDEOS DE LA PÁGINA DECORACIÓN */
+
+/* clase vídeos youtube en decoración */
+.videosyoutube {
+margin: 50px 0px 50px 200px;
+}
+
+
+/* PÁGINA DE SOBRE MÍ */
+
+/* Primer bloque de texto id textosobremi */
+  #textosobremi {
+  padding: 20px 200px 0px 200px;
+  text-align: justify;
+}
+
+  #textosobremi div p a {
+  color:	#7ea0df;
+}
+
+/* Diapositivas de la página de sobre mí */
+
+  .diapositivas{
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+  }
+
+  ul.fotosdiapo{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    list-style: none;
+  }
+  
+  ul.fotosdiapo li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+  }
+  
+  ul.fotosdiapo li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  ul.fotosdiapo li:first-child {
+      opacity: 1;
+  }
+  
+  ul.fotosdiapo li:target {
+      opacity: 1;
+  }
+  
+  .botones{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .botones li{
+    display: inline;
+    text-align: center;
+  }
+  
+  .botones li a{
+    display: inline;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(161, 191, 216);
+    padding: 10px;
+  }
+
+/* PÁGINA DE CONTACTO */
+
+/* Iconos de redes sociales */
+#iconosredes {
+  margin: -3000px 100px 0px 1300px;
+  display: inline-block;
+}
+
+/* Clase de texto de contacto */
+.textocontacto {
+  margin: 50px 400px 30px 400px;
+  text-align: justify;
+}
+
+.formulario {
+  margin: 0px 50px 50px 380px;
+  background-color: rgb(179, 183, 187);
+  padding: 20px 20px 20px 20px; 
+  display: inline-block;
+}

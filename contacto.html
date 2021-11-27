@@ -8,10 +8,16 @@
     <meta name="description" content="PROYECTOPAGINAWEB">
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
     <link rel="stylesheet" type="text/css" href="./css/estilos.css" />
-    <img src="./imagenes/logo.jpg" alt="logo nanazar" width="800" height="200">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+
+    <!-- imagen de la cabecera -->
+    <div id="banner">
+        <img src="./imagenes/logo.jpg" alt="logo nanazar">
+    </div>
 </head>
 
 <body>
+
     <h1>Página de contacto</h1>
     <!-- Elemento nav menú principal con la lista li -->
     <nav>
@@ -20,37 +26,45 @@
             <li><a href="./manualidades.html">Manualidades</a></li>
             <li><a href="./decoracion.html">Decoración</a></li>
             <li><a href="./sobremi.html">Sobre mí</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>           
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <h2>¿Quieres ponerte en contacto conmigo?</h2>
-    <p>Para cualquier duda que tengas respecto a las manualidades, a la decoración o a mi tienda, te dejo por aquí mi
-        email para que te pongas en contacto conmigo dejándome tu mensaje. Puedo tardar entre 2 y 3 días en contestar,
-        ten paciencia, solo soy una personita. Mira en tu carpeta de spam. Muchas gracias, ¡nos leemos!</p>
+
+    <div class="textocontacto">
+        <h2>¿Quieres ponerte en contacto conmigo?</h2>
+        <p>Para cualquier duda que tengas respecto a las manualidades, a la decoración o a mi tienda, te dejo por aquí
+            mi
+            email para que te pongas en contacto conmigo dejándome tu mensaje. Puedo tardar entre 2 y 3 días en
+            contestar,
+            ten paciencia, solo soy una personita. Mira en tu carpeta de spam. Muchas gracias, ¡nos leemos!</p>
+    </div>
 
     <!-- formulario -->
-
-    <form>
-        <label>Nombre:</label>
-        <input type="text" name="nombre">
-        <label>Email:</label>
-        <input type="email" email="email">
-        <label>Mensaje:</label>
-        <input type="text" text="mensaje">
-        <input type="submit" onclick="alert('Gracias por tu mensaje');" value="Enviar">
-        <i class="far fa-envelope"></i>
-    </form>
-
-    <h2>Nos vemos en mis redes sociales</h2>
-    <p>También te dejo mis redes sociales para que no te pierdas nada, subo contenido todos los días</p>
+    <div class="formulario">
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre">
+            <label>Email:</label>
+            <input type="email" email="email">
+            <label>Mensaje:</label>
+            <input type="text" text="mensaje" width="100" height="100">
+            <input type="submit" onclick="alert('Gracias por tu mensaje');" value="Enviar">
+            <i class="far fa-envelope"></i>
+        </form>
+    </div>
 
     <!-- iconos redes sociales -->
-    <ul class="iconosredes">
-    <img src="./imagenes/iconosredessociales/instagram.png" alt="instagram" />
-    <img src="./imagenes/iconosredessociales/youtube.png" alt="https://www.youtube.com/" />
-    <img src="./imagenes/iconosredessociales/facebook.png" alt="Facebook" />
-    <img src="./imagenes/iconosredessociales/twitter.png" alt="twitter" />
+    <ul id="iconosredes">
 
+        <a href="https://www.instagram.com/nanazardiy/"> <img src="./imagenes/iconosredessociales/instagram.png"
+                width="70" height="70"></a>
+        <a href="https://www.youtube.com/channel/UCWr9ip6vidoQOb0Fq20Yu8A"> <img
+                src="./imagenes/iconosredessociales/youtube.png" width="70" height="70"></a>
+        <a href="https://www.facebook.com/nanazardiy/"> <img src="./imagenes/iconosredessociales/facebook.png"
+                width="70" height="70"></a>
+        <a href="https://twitter.com/nanazardiy"> <img src="./imagenes/iconosredessociales/twitter.png" width="70"
+                height="70"></a>
+    </ul>
     <!-- Elemento footer -->
     <footer>
         <p>Derechos Reservados &copy; 2020-2021</p>

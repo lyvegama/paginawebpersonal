@@ -8,10 +8,15 @@
     <meta name="description" content="PROYECTOPAGINAWEB">
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
     <link rel="stylesheet" type="text/css" href="./css/estilos.css" />
-    <img src="./imagenes/logo.jpg" alt="logo nanazar" width="800" height="200">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
 </head>
 
 <body>
+    <!-- imagen de la cabecera -->
+    <div id="banner">
+        <img src="./imagenes/logo.jpg" alt="logo nanazar">
+    </div>
+
     <h1>Sobre mí</h1>
     <!-- Elemento nav menú principal con la lista li -->
     <nav>
@@ -20,50 +25,101 @@
             <li><a href="./manualidades.html">Manualidades</a></li>
             <li><a href="./decoracion.html">Decoración</a></li>
             <li><a href="./sobremi.html">Sobre mí</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>           
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
+
     <!-- divisor de párrafos -->
-    <div id="division1">
+    <div id="textosobremi">
         <h2>¡Hola!</h2>
-        <ul>
-            <p>Mi nombre es Lydia, y soy creadora de contenido en esta página web y en mi canal de YouTube con el mismo
+        <div>
+            <p>Mi nombre es Lydia y soy creadora de contenido en esta página web y en mi canal de YouTube con el mismo
                 nombre.</p>
-            <p>Estudié el Grado de Historia en la UAH, Madrid, España. Y aunque adoro la historia, entendí que ese mundo
-                no era para mí y comencé a estudiar lo que realmente me apasionaba, la decoración de interiores.</p>
-            <p>Soy técnico superior en decoración de interiores y programas 3D. He sido Visual Merchandiser en una
+            <p>Estudié un <b>Grado de Historia</b> en la <b><a href="https://www.uah.es/es/">UAH</a></b> <b>Madrid,
+                    España.</b> Y aunque adoro la historia, entendí que ese mundo
+                no era para mí y comencé a estudiar algo que me apasionaba, la decoración de interiores.</p>
+            <p>Soy <b>técnico superior en decoración de interiores y programas 3D.</b> He sido Visual Merchandiser en
+                una
                 reconocida tienda de decoración en España y he estado trabajando como Asesora de Iluminación en otra de
                 bricolaje y decoración.</p>
-            <p>Mi última experiencia enriquecedora ha sido estudiar en la famosa Accademia Riaci en el centro de
-                Firenze, Italia, bajo el profesorado del Prof. Bicci, diseñador líder de las tiendas de Salvatore
-                Ferragamo en todo el mundo y diseñador referente activo del diseño italiano. Allí no solo aprendí
+            <p>Mi última experiencia enriquecedora ha sido estudiar en la famosa <b><a
+                        href="https://www.accademiariaci.info/">Accademia Riaci</a></b> en el centro de
+                <b>Firenze, Toscana, Italia,</b> bajo el profesorado del <i>Prof. Bicci</i>, diseñador líder de las
+                tiendas de <u>Salvatore
+                    Ferragamo</u> en todo el mundo y diseñador referente activo del diseño italiano. Allí no solo
+                aprendí
                 técnicas diferentes a España en cuanto a decoración, también me especialicé en la decoración enfocada a
-                la arquitectura de las estancias.</p>
-            <p>Te invito a cotillear mi web para encontrar inspiración, aprender de decoración fácil y sin tecnicismos o
+                la arquitectura de las estancias.
+            </p>
+            <p>Ahora me encuentro estudiando un bootcamp de <b>Desarrollo Web Full Stack</b> en <b><a
+                        href="https://www.thebridge.tech/">The Bridge</a></b> y veremos qué tal.</p>
+            <p>Estoy destinada a salvar animales de la calle, me encanta patinar y viajar sola y probara cosas y
+                actividades nuevas. Te invito a cotillear mi web para encontrar inspiración, aprender de decoración
+                fácil y sin tecnicismos o
                 a colaborar conmigo para crecer juntos.</p>
-        </ul>
-
-        <!-- imagen -->
-        <img src="./imagenes/fotowebnanazardiy4.jpg" alt="logo nanazar" width="350" height="200">
-
-        <h3>Manualidades</h3>
-        <p>Aquí encontrarás infinidad de vídeos y entradas de manualidades, siempre intentando reciclar lo que ya
-            tenemos en casa.</p>
-            <img src="./imagenes/fotowebnanazardiy3.jpg" alt="logo nanazar" width="350" height="200">
-        <h3>Diseño</h3>
-        <p>En esta sección vamos a meternos de lleno en el mundo del diseño de interiores y os voy a aportar ideas y
-            trucos que yo he aprendido en todo este tiempo.</p>
-            <img src="./imagenes/fotowebnanazardiy5.jpg" alt="logo nanazar" width="350" height="200">
-        <h3>Tienda</h3>
-        <p>¡También tengo una tienda en etsy! Hago decoración a mano para poner más bonita tu casa.</p>
-        <img src="./imagenes/fotowebnanazardiy7.jpg" alt="logo nanazar" width="350" height="200">
+        </div>
     </div>
 
-    <!-- aside lateral -->
-    <aside>
-        <blockquote>Últimas entradas en links</blockquote>
-    </aside>
+    <!-- diapositivas de fotos -->
+
+    <div class="diapositivas">
+
+        <ul class="fotosdiapo">
+            <li id="foto1">
+                <img src="./imagenes/imagenessobremi/soydejaen.png" />
+            </li>
+            <li id="foto2">
+                <img src="./imagenes/imagenessobremi/historia.png" />
+            </li>
+            <li id="foto3">
+                <img src="./imagenes/imagenessobremi/deco.png" />
+            </li>
+            <li id="foto4">
+                <img src="./imagenes/imagenessobremi/florencia.png" />
+            </li>
+            <li id="foto5">
+                <img src="./imagenes/imagenessobremi/rescate.png" />
+            </li>
+            <li id="foto6">
+                <img src="./imagenes/imagenessobremi/eco.png" />
+            </li>
+            <li id="foto7">
+                <img src="./imagenes/imagenessobremi/patinar.png" />
+            </li>
+            <li id="foto8">
+                <img src="./imagenes/imagenessobremi/viajar.png" />
+            </li>
+        </ul>
+
+        <ul class="botones">
+            <li>
+                <a href="#foto1">1</a>
+            </li>
+            <li>
+                <a href="#foto2">2</a>
+            </li>
+            <li>
+                <a href="#foto3">3</a>
+            </li>
+            <li>
+                <a href="#foto4">4</a>
+            </li>
+            <li>
+                <a href="#foto5">5</a>
+            </li>
+            <li>
+                <a href="#foto6">6</a>
+            </li>
+            <li>
+                <a href="#foto7">7</a>
+            </li>
+            <li>
+                <a href="#foto8">8</a>
+            </li>
+        </ul>
+
+    </div>
 
     <!-- Elemento footer -->
     <footer>
